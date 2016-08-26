@@ -1,0 +1,49 @@
+<div class="container">
+
+  <nav class="navbar navbar-default">
+    <!-- Empty nav bar for now -->
+  </nav>
+
+  
+  <div class="col-md-5">
+    <div class="thumbnail">
+      <div class="caption">
+        <h4>Currency Converter</h4>
+        <p>Type in amount and select currency:</p>
+        <div class="row">
+          <div class="col-md-6">
+            <input type="number" ng-keyup="main.convertCurrency($event)" ng-model="main.fromAmount" class="form-control" />
+          </div>
+          <div class="col-md-4">
+            <select ng-model="main.fromCurrency" ng-change="main.currencyBaseChange()" class="form-control btn-primary">
+              <option value="CAD">CAD</option>
+              <option value="USD">USD</option>
+              <option value="EUR">EUR</option>
+            </select>
+          </div>
+        </div>
+        <p>Converted amount:</p>
+        <div class="row">
+          <div class="col-md-6">
+            <input type="number" ng-model="main.toAmount" class="form-control" />
+          </div>
+          <div class="col-md-4">
+            <select ng-model="main.toCurrency" ng-change="main.currencyChange()" class="form-control btn-primary">
+              <option value="CAD">CAD</option>
+              <option value="USD">USD</option>
+              <option value="EUR">EUR</option>
+            </select>
+          </div>
+        </div>
+        <p></p>
+        <div class="row">
+          <div class="col-md-5 pull-right">
+            <a id="disclaimer" popover-placement="top" popover-trigger="outsideClick" uib-popover="Exchange Rate {{main.exRateInfo}}" ng-href="#">Disclaimer</a>
+          </div>
+        </div>
+      </div>
+        
+    </div>
+  </div>
+
+</div>
