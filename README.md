@@ -7,8 +7,8 @@ Prerequisites
 - Node and Bower
 
 Installation
-1. Clone the repository
-2. On CLI, cd into the project folder 
-3. Run command: npm install
-4. Run command: bower install
-5. Run command: gulp serve
+- Clone the repository
+- On CLI, cd into the project folder 
+- Run command: npm install
+- Run command: bower install
+- Run command: gulp serve
