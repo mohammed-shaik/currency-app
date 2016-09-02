@@ -11,7 +11,7 @@
 
     var service = {
       getExchangeRates: getExchangeRates,
-      getRatesFromStroge: getRatesFromStroge,
+      getRatesFromStorage: getRatesFromStorage,
       setRatesInLocalStorage: setRatesInLocalStorage
     };
 
@@ -23,7 +23,7 @@
 
     // This function will return the stored json if available,
     // otherwise false
-    function getRatesFromStroge() {
+    function getRatesFromStorage() {
       // set this as a const in the app config?
       var storageKey = 'fixerio_rates';
       // First check if the browser supports the current set storage type

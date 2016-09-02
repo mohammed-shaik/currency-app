@@ -86,7 +86,7 @@
     };
 
     function getExchangeRates() {
-      var storageRates = MainService.getRatesFromStroge();
+      var storageRates = MainService.getRatesFromStorage();
 
       if(storageRates) {
         exRates.rates = storageRates.data.rates;
